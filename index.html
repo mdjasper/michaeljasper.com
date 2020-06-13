@@ -8,26 +8,63 @@
         max-width:800px;
         line-height:1.6;
         font-size:18px;
-        color:#222;
+        color:#333;
         padding:0 10px;
+        font-family: Georgia, serif;
+        font-size: 1.2em;
       }
       h1,h2,h3{
-        line-height:1.2;
+        line-height:1.3em;
       }
       dd:before{
         content: "‣";
         color: #999;
       }
+      .header img{
+        margin:0 auto;
+        height:50px;
+        width:50px;
+      }
+      @media screen and (min-width: 1200px){
+        .header{
+          display:flex;
+          margin-left:-250px;
+        }
+        .header img{
+          margin-right:50px;
+          height:200px;
+          width:200px;
+        }
+        .header h1{
+          margin-top:0;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>Michael Jasper's personal homepage</h1>
+    <div class="header">
+      <div>
+        <img src="/headshot.png" alt="Michael Jasper's headshot photo" height="200">
+      </div>
+      <div>
+        <h1>Michael Jasper's Personal Homepage</h1>
 
-    <!-- <h2>Profiles around the web</h2> -->
+        <!-- <h2>Profiles around the web</h2> -->
 
+        <ul>
+          <li><a href="https://www.github.com/mdjasper" target="_blank">Github</a></li>
+          <li><a href="https://www.codepen.io/mdjasper" target="_blank">Codepen</a></li>
+          <li><a href="https://www.mikedoesweb.com" target="_blank">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>tl;dr</h2>
     <ul>
-      <li><a href="https://www.github.com/mdjasper" target="_blank">Github</a></li>
-      <li><a href="https://www.codepen.io/mdjasper" target="_blank">Codepen</a></li>
+      <li> software engineer with 10 years professional exp (20 of casual programming) &amp; some leadership roles</li>
+      <li> designing, implementing, documenting complex &amp; distributed systems</li>
+      <li> polyglot dev: javascript, golang, bash, c++, terraform, devops &amp; more</li>
+      <li> I like to learn &amp; teach, BS in CS 2013, MS in CS 2018</li>
     </ul>
 
     <h2>Career & Education</h2>
